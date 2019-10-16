@@ -1,0 +1,4 @@
+psycopg2
+psycopg2-binary
+django
+/home/local/dev/projects/django-dynamic-admin
