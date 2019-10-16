@@ -29,8 +29,8 @@ INSTALLED_APPS = [
 
 ## Using
 1. Use Django administration (http://127.0.0.1:8000/admin/) to;
-2. Create a bundle content type through the `ExampleBundle` model provided adding any fields.
-3. Optionally create taxonomy dictionaries and add a taxonomy dictionary field.
+2. Create a bundle content type through the `ExampleBundle` model provided and adding any fields.
+3. Optionally create a taxonomy dictionary and add a taxonomy dictionary field.
 4. Run `python src/manage.py makemigrations; python src/manage.py migrate`
 5. Your new content types are available from (http://127.0.0.1:8000/admin/).
 
