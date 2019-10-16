@@ -1,6 +1,4 @@
-# Djynamic
-
-Example implementation app of django-dynamic-admin for **Django admin**.
+### Example implementation app of django-dynamic-admin for **Django admin**.
 
 Current development version includes an example bundle and taxonomy.
 
@@ -19,15 +17,13 @@ python src/manage.py runserver
 
 ## Setting up
 
-(Rename `settings_example.py` to `settings.py`)
+(Update settings in `settings.py`)
 
 ```
 INSTALLED_APPS = [
-    'djynamic.entity',
-    'djynamic.taxonomy',
-    'djynamic.bundle',
-    'djynamic.example_bundle',
-    'djynamic.example_bundle.example_content_models',
+    'dynamicadmin',
+    'example_bundle',
+    'example_bundle.example_content_models',
 ]
 ```
 
