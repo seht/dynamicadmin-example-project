@@ -1,13 +1,7 @@
 from django.contrib import admin
 from dynamicadmin.admin import BundleAdmin, TaxonomyDictionaryAdmin, register_bundle_model, register_content_models
 from dynamicadmin.models import BundleEntity, TaxonomyDictionary
-from .models import ExampleBundle
-
-# Register your models here.
-
-
-class ExampleTaxonomyDictionary(TaxonomyDictionary):
-    pass
+from .models import ExampleBundle, ExampleTaxonomyDictionary
 
 
 class ExampleBundleAdmin(BundleAdmin):
