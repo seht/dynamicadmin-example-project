@@ -9,6 +9,7 @@ Includes an example bundle and taxonomy dictionary.
 virtualenv -p /usr/bin/python3 env
 source env/bin/activate
 pip install -r requirements.txt
+python src/manage.py makemigrations
 python src/manage.py migrate
 python src/manage.py createsuperuser
 python src/manage.py collectstatic
@@ -23,7 +24,7 @@ python src/manage.py runserver
 INSTALLED_APPS = [
     'dynamicadmin',
     'example_bundle',
-    'example_bundle.example_content_models',
+    'example_bundle.example_dynamic_models',
 ]
 ```
 

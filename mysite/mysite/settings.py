@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'dynamicadmin',
     'example_bundle',
-    'example_bundle.example_content_models',
+    'example_bundle.example_dynamic_models',
 ]
 
 MIDDLEWARE = [

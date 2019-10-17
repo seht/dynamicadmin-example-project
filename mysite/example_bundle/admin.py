@@ -9,6 +9,8 @@ class ExampleBundleAdmin(BundleAdmin):
 
 
 register_bundle_model(ExampleBundle, model_admin=ExampleBundleAdmin)
-register_dynamic_models(ExampleBundle, 'example_content_models', model_admin=admin.ModelAdmin, base=BundleEntity)
+register_dynamic_models(ExampleBundle, 'example_dynamic_models', model_admin=admin.ModelAdmin, base=BundleEntity)
 
 admin.site.register(ExampleTaxonomyDictionary, TaxonomyDictionaryAdmin)
+
+
