@@ -1,2 +1,1 @@
-from dynamicadmin.tests import *
-
+from dynamicadmin.tests.test_models import *
