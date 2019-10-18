@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polymorphic',
+    'polymorphic',  # Support for polymorphic admin inlines.
     'dynamicadmin',
     'example_bundle',
     'example_bundle.example_dynamic_models',
