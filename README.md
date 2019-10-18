@@ -9,11 +9,11 @@ Includes an example bundle and taxonomy dictionary.
 virtualenv -p /usr/bin/python3 env
 source env/bin/activate
 pip install -r requirements.txt
-python src/manage.py makemigrations
-python src/manage.py migrate
-python src/manage.py createsuperuser
-python src/manage.py collectstatic
-python src/manage.py runserver
+python mysite/manage.py makemigrations
+python mysite/manage.py migrate
+python mysite/manage.py createsuperuser
+python mysite/manage.py collectstatic
+python mysite/manage.py runserver
 ```
 
 ## Setting up
@@ -22,6 +22,7 @@ python src/manage.py runserver
 
 ```
 INSTALLED_APPS = [
+    'polymorpgic',
     'dynamicadmin',
     'example_bundle',
     'example_bundle.example_dynamic_models',
