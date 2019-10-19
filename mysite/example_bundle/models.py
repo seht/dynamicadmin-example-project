@@ -1,12 +1,18 @@
 from django.db import models
+from dynamicadmin.models import Bundle
+
 
 # Create your models here.
 
-from dynamicadmin.models import Bundle, TaxonomyDictionary
 
+class ExampleDynamicEntity(models.Model):
+    class Meta:
+        abstract = True
 
-class ExampleTaxonomyDictionary(TaxonomyDictionary):
-    pass
+    def __str__(self):
+        return self.label
+
+    label = models.CharField(max_length=255)
 
 
 class ExampleBundle(Bundle):
